@@ -66,6 +66,7 @@ dog.supBark();
 dog.cavolo(fun (a) {
     return a + 1;
 });
+
 ```
 
 [https://www.tudou-lang.icu/](https://www.tudou-lang.icu/) 目前正在积极筹款建设中...
