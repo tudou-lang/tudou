@@ -7,10 +7,12 @@
 ## Building on a Unix-like system
 
 **注：仅限 Deepin 发行版可安装，** *因为创始人土豆哥不使用其它发行版* **。**
+**写好之后用apt安装 毕竟deepin是debian的发行版之一**
 
 ### Dependencies
 
 **本语言唯一依赖为 Java。** *因为创始人土豆哥说过，不要学其它语言，学 Java 就可以了* **。**
+**需要较新的java版本 当然tudoulang可能会基于C++或者其他语言编写 提高效率**
 
 * **Java**
 
@@ -22,9 +24,10 @@ cd tudou
 ```
 
 **Configure the build settings:**
+> 使用cmake去编译 跨平台 可以选择ninja
 
 ```shell
-./configure
+cmake -build .
 ```
 
 **‍**
