@@ -24,10 +24,50 @@ cd tudou
 **Configure the build settings:**
 
 ```shell
-./configure
+make
 ```
 
-**‍**
+**‍tudoulang example**
+```tudoulang
+class Animal {
+    init() {
+        this.x = 8;
+    }
+
+    bark() {
+        print "...";
+    }
+}
+
+class Dog < Animal {
+    init() {
+        this.x = 5;
+    }
+
+    bark() {
+        print "Woof!";
+    }
+
+    supBark() {
+        super.bark();
+    }
+
+    cavolo(f) {
+        print f(this.x);
+    }
+}
+
+var dog = Dog();
+print dog.x;
+dog.bark();
+print dog.x;
+dog.supBark();
+
+dog.cavolo(fun (a) {
+    return a + 1;
+});
+
+```
 
 [https://www.tudou-lang.icu/](https://www.tudou-lang.icu/) 目前正在积极筹款建设中...
 
